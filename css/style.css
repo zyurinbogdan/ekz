@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #4D4959;
+}
+
+li{
+    list-style: none;
+}
+/* --------------------------------- reset end*/
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 2rem;
+    color: #4D4959;
+    min-height: 100%;
+}
+
+.wrapper {
+    overflow: hidden;
+    
+}
+.header {
+    min-height: 100vh;
+    background-image: url('../img/bgfs.jpeg');
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.menu {
+    padding-top: 35px;
+    transition: all .5s;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .item{
+    padding: 0 40px;
+    position: relative;
+}
+
+.menu .logo{
+    padding: 0 20px;
+}
+
+.menu .item a{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.menu .item::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #4d4959;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    right: 0;
+}
+
+.menu .item:last-child::after{
+    display: none;
+}
+
+.menu .item:nth-child(2)::after,
+.menu .item:nth-child(3)::after{
+    background-color: transparent;
+}
+
+.icon{
+    display: none;
+    position: absolute;
+}
+/* ----------------------section 1 start---------------------- */
+.first{
+    background-color: rgba(247, 247, 247, 1);
+}
+.wrapSection{
+    max-width: 1100px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    padding: 120px 10px 145px 10px;
+}
+.wrapSection img, .wrapSection h1{
+    margin-bottom: 35px;
+}
+.wrapSection h1, .brand h2{
+    font-size: 18px;
+    color: #353738;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.wrapSection p{
+    font-size: 18px;
+    color: #848789;
+}
+/* ----------------------section 1 end---------------------- */
+/* ----------------------section 2 brand start---------------------- */
+ .brand .row{
+     display: flex;
+ }
+ .column{
+     flex: 0 1 33.333%;
+ }
+ .columnBig{
+     flex: 0 1 66.667%;
+ }
+ .row1 .columnBig{
+     background-image: url('../img/fonImg1.jpeg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     position: relative;
+ }
+ .row1 .columnBig a img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+ }
+ .row1 .columnBig a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+ }
+ .row1 .columnBig a:hover{
+    opacity: 1;
+    background-color: rgba(100, 194, 158, 0.8);
+ }
+ .column .itemText{
+     text-align: center;
+
+ }
+ .column .itemText img{
+     margin: 70px 0 30px 0;
+ }
+ .column .itemText h2{
+     margin-bottom: 30px;
+ }
+ .column .itemText p{
+     text-align: justify;
+     padding: 0 70px;
+     /* margin-bottom: 110px; */
+ }
+ .row1 .column .brandImage{
+     background-image: url(../img/fonImg4.jpeg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     padding-bottom: 37.99%;
+ }
+ .line{
+    height: 1px;
+    margin-bottom: 150px;
+ }
+ .row2 .column .brandImage2{
+    background-image: url(../img/fonImg5.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 37.99%;
+ }
+ .row2 .columnBig{
+    background-image: url('../img/fonImg2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.row2 .columnBig a img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+}
+.row2 .columnBig a{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   opacity: 0;
+   transition: 0.5s;
+}
+.row2 .columnBig a:hover{
+   opacity: 1;
+   background-color: rgba(100, 194, 158, 0.8);
+}
+.row3 .column .brandImage3{
+    background-image: url(../img/fonImg7.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 37.99%;
+}
+.row3 .column:nth-child(1){
+    background-image: url('../img/fonImg3.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.row3 .column:nth-child(1) a img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+}
+.row3 .column:nth-child(1) a{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   opacity: 0;
+   transition: 0.5s;
+}
+.row3 .column:nth-child(1) a:hover{
+   opacity: 1;
+   background-color: rgba(100, 194, 158, 0.8);
+}
+.row3 .column:nth-child(3){
+    background-image: url('../img/fonImg6.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* ----------------------section 3 third start---------------------- */
+.third{
+    background-color: rgba(247, 247, 247, 1);
+}
+/* ----------------------section 3 third end---------------------- */
+/* ----------------------section 4 fourth start---------------------- */
+.fourth .row{
+    display: flex;
+}
+.column1{
+    flex: 0 1 16.66%;
+}
+.columnBig1{
+    flex: 0 1 33.33%;
+}
+.row5{
+    display: flex;
+}
+.fourth .row4 .row6{
+    padding-left: 1px;
+}
+.columnBig1{
+    background-image: url('../img/Layer20.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    position: relative;
+    
+}
+
+.columnBig1 a .img{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+   
+}
+.columnBig1 a{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   opacity: 0;
+   transition: 0.5s;
+}
+.columnBig1 a:hover{
+   opacity: 1;
+   background-color: rgba(100, 194, 158, 0.8);
+}
+.row8{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+/* ----------------------section 4 fourth end---------------------- */
+/* ----------------------discover start---------------------- */
+.discover{
+    background-color: rgba(40, 47, 53, 1);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.button{
+    width: 300px;
+    height: 60px;
+    border-top:1px solid #848789;
+    border-left:1px solid #848789;
+    border-right:1px solid #848789;
+    border-bottom:1px solid #d2d6d8;
+    position: relative;
+}
+.discover .button a{
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.discover .button a:hover{
+    box-shadow: 0 0 10px #848789;
+}
+/* ----------------------discover end---------------------- */
+/* ----------------------feedback start---------------------- */
+.feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 140px;
+}
+.feedback img{
+    margin-top: 110px;
+    margin-bottom: 40px;
+}
+.feedback p{
+    font-size: 24px;
+    font-style: italic;
+    color: #848789;
+    margin-bottom: 40px;
+}
+.feedback form{
+    display: flex;
+    flex-direction: row;
+}
+.feedback input[type="email"]{
+    border: 1px solid rgba(145, 148, 151, 0.566);
+    width: 540px;
+    height: 70px;
+    padding: 0 0 0 30px;
+    font-size: 20px;
+}
+.feedback input[type="submit"]{
+    width: 130px;
+    height: 70px;
+    background-color: rgba(100, 194, 158, 1);
+    margin: 0 0 0 5px;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+/* ----------------------feedback end---------------------- */
+/* ----------------------footer start---------------------- */
+footer{
+    display: flex;
+    flex-direction: row;
+
+}
+footer .address{
+    margin-left: 250px;
+}
+footer .icons{
+display: flex;
+justify-content: center;
+margin-left: 135px;
+margin-right: 250px;
+}
+footer .icons a{
+    padding: 0 15px;
+}
+footer .devLogo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 36px;
+}
+footer .devLogo p{
+    white-space: nowrap;
+    margin-right: 10px;
+}
+footer .address p{
+    font-size: 16px;
+    color: #848789;
+}
+footer .address p:nth-child(1){
+    font-weight: bold;
+}
+footer .address p:nth-child(1),footer .address p:nth-child(2){
+    font-style: italic;
+}
+
+/* --------------------------------------- media */
+
+@media (max-width: 820px) {
+    .menu{
+        background-color: #4d4959;
+        opacity: 0.8;
+        position: absolute;
+        top: -100%;
+        width: 100%;
+        z-index: 10;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu .logo{
+        order: -1;
+        padding-bottom: 40px;
+    }
+    .menu .item{
+        padding: 0 0 40px 0;
+    }
+    .menu .item::after{
+        right: 50%;
+        background-color: #fff;
+    }
+
+    .menu .item:nth-child(2)::after{
+        background-color: #fff;
+    }
+
+    .menu .item a{
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .menu.active{
+        top: 0%;
+    }
+
+    .icon{
+        display: block;
+        width: 45px;
+        height: 45px;
+        top: 40px;
+        right: 40px;
+        z-index: 15;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+    .icon::before,
+    .icon::after{
+        content: "";
+    }
+
+    .icon span,
+    .icon::before,
+    .icon::after{
+        width: 100%;
+        height: 15%;
+        background-color: #4d4959;
+        position: absolute;
+    }
+    .icon::before{
+        top: 0;
+    }
+    .icon::after{
+        bottom: 0;
+    }
+    .icon span{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .icon.active span{
+        display: none;
+    }
+    .icon.active::after{
+        transform: rotate(45deg);
+        top: 50%;
+        background-color: #fff;
+    }
+    .icon.active::before{
+        transform: rotate(-45deg);
+        top: 50%;
+        background-color: #fff;
+    }
+    .row .columnBig{
+        display: none;
+    }
+    .row .column{
+        flex: 0 1 100%;
+    }
+    .row .column:nth-child(1), .row .column:nth-child(3){
+        display: none;
+    }
+}
